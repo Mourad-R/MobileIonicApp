@@ -1,0 +1,13 @@
+<body ng-app="TestApp" ng-controller="AppCtrl">
+<ion-modal-view>
+	  <ion-content>
+	  	
+	  <button ng-click='getusers()'>Get Api content</button>
+
+	  <ul>
+	  	<li ng-repeat='user in users'><a href="/#/app/getapi/{{user.idUser}}">{{user.lastname}} {{user.name}}</a></li>
+	  </ul>
+
+	  </ion-content>
+</ion-modal-view>
+</body>

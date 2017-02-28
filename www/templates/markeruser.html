@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app='starter'>
+<head>
+  <style type='text/css'>
+    .google-map {  height: 1000px; }
+  </style>
+</head>
+
+  <map ng-transclude class='google-map' center="map.center"> 
+ <div ng-controller="ApiCrtl" >
+     <marker ng-repeat ="user in users" position='[user.position.lat, user.position.lng]'></marker>
+</div>
+  </map>
+</body>
+
+</body>
+</html>

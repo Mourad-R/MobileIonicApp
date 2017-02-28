@@ -1,0 +1,32 @@
+
+<ion-modal-view>
+	  <ion-content>
+	  <div>
+		<ul>
+		  	<li>Nom de famille : {{check.lastname}}</li>
+		  	<li>Prénom : {{check.name}}</li>
+		  	<li>Age : {{check.age}}</li>
+		  	<li>Tel : {{check.phone}}</li>
+		  	<li>Adresse : {{check.adress}}</li>
+		  	<li>Id users : {{check.idUser}}</li>
+		</ul>
+	   </div>
+
+	   <div></br></div>
+
+	   <div>Update users infos :</div></br>
+
+	   	<div>
+			<form method="PUT" action="updateUsers()">
+				<input type="text" name="lastname" placeholder="{{check.lastname}}" value="{{check.lastname}}">
+				<input type="text" name="name" value="{{check.name}}">
+				<input type="text" name="lastname" value="{{check.lastname}}">
+				<input type="text" name="age" value="{{check.age}}">
+				<input type="text" name="phone" value="{{check.phone}}">
+				<input type="text" name="adress" value="{{check.adress}}">
+				<input type="button" value="Update user infos !" ng-click="updateUsers()">
+			</form>
+	   </div>
+	  </ion-content>
+</ion-modal-view>
+</body>
