@@ -99,6 +99,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'Testservice', 'ngMap
         }
       }
     })
+   .state('app.ngmodel', {
+      url: '/ngmodel',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/ngmodel.html',
+          controller: 'ngmodelCtrl'
+        }
+      }
+    })
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {

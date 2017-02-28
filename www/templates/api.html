@@ -4,8 +4,9 @@
 	  	
 	  <button ng-click='getusers()'>Get Api content</button>
 
-	  <ul>
-	  	<li ng-repeat='user in users'><a href="/#/app/getapi/{{user.idUser}}">{{user.lastname}} {{user.name}}</a></li>
+	  <ul class="list">
+	  	<li class="item" ng-repeat='user in users'> {{user.lastname}} {{user.name }}<a href="/#/app/getapi/{{user.idUser}}">User Infos</a>
+	  	<i class="icon ion-person-stalker"></i></li>
 	  </ul>
 
 	  </ion-content>

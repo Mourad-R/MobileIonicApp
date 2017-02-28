@@ -47,6 +47,32 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('ngmodelCtrl', function($scope) {
+
+
+  $scope.data = {
+
+    name: "",
+    mass: "",
+    comment: ""
+
+  }
+
+  $scope.valid = function() {
+    console.log($scope.data.name);
+    console.log($scope.data.mass);
+    console.log($scope.data.comment);
+  }
+
+
+
+
+})
+
+// .controller('onclickCtrl', function($scope) {
+//     console.log("John Doe");
+// })
+
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae, by the way i love Bob Marley music', id: 1 },
